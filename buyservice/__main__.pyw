@@ -2,7 +2,7 @@ import logging
 import os
 import time
 
-from buyservice.config import Config
+from config import Config
 from market import MarketAPI, MarketBuyError, MarketItem
 from market.api import parse_search_data
 from telegram.telegram_bot import TelegramBot
