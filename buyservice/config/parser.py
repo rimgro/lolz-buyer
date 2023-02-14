@@ -2,7 +2,7 @@ from configparser import ConfigParser
 from dataclasses import dataclass
 from typing import List
 
-from base_field import BaseSection
+from .base_field import BaseSection
 
 
 @dataclass
