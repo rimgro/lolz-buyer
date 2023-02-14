@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-from telebot import TeleBot, types
-from config import Config
+from telebot import TeleBot
+from buyservice.config import Config
 import json
 import validators
 
