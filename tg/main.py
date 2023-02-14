@@ -144,6 +144,9 @@ def disable(msg):
     bot.send_message(msg.chat.id, "✅ Покупка выключена")
 
 
+@bot.message_handler(commands=["ping"])
+def ping(msg):
+    bot.reply_to(msg, "pong")
 
 
 
