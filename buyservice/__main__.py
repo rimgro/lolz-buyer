@@ -41,6 +41,11 @@ def check_accounts():
     if not buy_flag:
         return
 
+    queries = []
+    for search_url in get_attr(c, "queries", []):
+        category, params = parse_search_data(search_url)
+        queries.append((category, params))
+
     # last_check = datetime.datetime.now()
     for query, params in queries:
         search_result = market.search(query, params)
