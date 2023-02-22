@@ -5,7 +5,7 @@ import time
 from config import Config
 from market import MarketAPI, MarketBuyError, MarketItem
 from market.api import parse_search_data
-from telegram.telegram_bot import TelegramBot
+from buy_service_telegram import TelegramBot
 import schedule
 from pathlib import Path
 import json
