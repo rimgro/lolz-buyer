@@ -5,7 +5,7 @@ from config import Config
 import json
 import validators
 
-parent_dir = Path(os.path.abspath(__file__)).parent.parent.absolute()
+parent_dir = Path(os.path.abspath(__file__)).parent.absolute()
 config = Config.load_config(parent_dir.joinpath("config.ini"))
 bot = TeleBot(config.telegram.bot_token)
 

@@ -98,7 +98,7 @@ def check_accounts():
     schedule.every(search_cd).seconds.do(check_accounts).tag("lolz")
 
 
-parent_dir = Path(os.path.abspath(__file__)).parent.parent.absolute()
+parent_dir = Path(os.path.abspath(__file__)).parent.absolute()
 config = Config.load_config(parent_dir.joinpath("config.ini"))
 logging.basicConfig(
     level=config.logging.level,
